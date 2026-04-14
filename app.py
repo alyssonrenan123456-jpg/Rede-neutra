@@ -1,9 +1,8 @@
-app = Flask(__name__)
-app.config['JSON_AS_ASCII'] = False
 from flask import Flask, request, render_template_string
 import unicodedata
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 
 REDES = [
     "LOGIN", "SEVEN", "RF", "PLUGNET", "BKUP", "SULTECH",
